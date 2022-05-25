@@ -1,34 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="79.5" height="202.278" viewBox="0 0 79.5 202.278">
+<svg xmlns="http://www.w3.org/2000/svg" width="102.5" height="166.966" viewBox="0 0 102.5 166.966">
     <defs>
-        <style>
-            .a {
-                fill: #2f2e41;
-            }
-
-            .b {
-                fill: #8c8c8c;
-            }
-
-            .c {
-                fill: #333;
-            }
-
-            .d {
-                fill: #383838;
-            }
-
-            .e {
-                fill: #141414;
-            }
-        </style>
+        <style>.a{fill:#8c8c8c;}.b{fill:#333;}.c{fill:#383838;}.d{fill:#141414;}</style>
     </defs>
-    <g transform="translate(-123.498)">
-        <path class="a" d="M523.238,385.876q-.122-.268-.243-.538c.031,0,.062.005.093.006Z" transform="translate(-388.062 -183.598)" />
-        <path class="b" d="M163.162,0,123.5,66.033l39.8,23.5Z" />
-        <path class="c" d="M203,66.033,163.162,0l.135,89.529Z" />
-        <path class="d" d="M123.5,66.033l39.749-18.117.048,41.613Z" />
-        <path class="e" d="M203,66.033,163.249,47.916l.086,40.092Z" />
-        <path class="c" d="M202.9,73.6l-39.7,23.5V129.5Z" />
-        <path class="b" d="M123.5,73.6l39.7,23.5V129.5Z" />
+    <g transform="translate(-1368.25 -116.722)">
+        <path class="a" d="M174.637,0,123.5,85.137l51.311,30.294Z" transform="translate(1244.753 116.722)" />
+        <path class="b" d="M214.523,85.137,163.162,0l.174,115.431Z" transform="translate(1256.227 116.722)" />
+        <path class="c" d="M123.5,71.274l51.249-23.358.062,53.652Z" transform="translate(1244.753 130.584)" />
+        <path class="d" d="M214.5,71.274,163.249,47.916l.111,51.691Z" transform="translate(1256.252 130.584)" />
+        <path class="b" d="M214.387,73.6,163.2,103.889v41.785Z" transform="translate(1256.238 138.014)" />
+        <path class="a" d="M123.5,73.6l51.188,30.294v41.785Z" transform="translate(1244.752 138.014)" />
     </g>
 </svg>
