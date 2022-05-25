@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79.5" height="202.278" viewBox="0 0 79.5 202.278">
+    <defs>
+        <style>
+            .a {
+                fill: #2f2e41;
+            }
+
+            .b {
+                fill: #8c8c8c;
+            }
+
+            .c {
+                fill: #333;
+            }
+
+            .d {
+                fill: #383838;
+            }
+
+            .e {
+                fill: #141414;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-123.498)">
+        <path class="a" d="M523.238,385.876q-.122-.268-.243-.538c.031,0,.062.005.093.006Z" transform="translate(-388.062 -183.598)" />
+        <path class="b" d="M163.162,0,123.5,66.033l39.8,23.5Z" />
+        <path class="c" d="M203,66.033,163.162,0l.135,89.529Z" />
+        <path class="d" d="M123.5,66.033l39.749-18.117.048,41.613Z" />
+        <path class="e" d="M203,66.033,163.249,47.916l.086,40.092Z" />
+        <path class="c" d="M202.9,73.6l-39.7,23.5V129.5Z" />
+        <path class="b" d="M123.5,73.6l39.7,23.5V129.5Z" />
+    </g>
+</svg>
