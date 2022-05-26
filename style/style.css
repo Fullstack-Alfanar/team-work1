@@ -161,7 +161,8 @@ main .signInAria form .btnDiv .special_txt {
   font-weight: bold;
 }
 
-main .signInAria form .btnDiv .signUp {
+main .signInAria form .btnDiv .signUp,
+main .signInAria form .btnDiv .reset {
   background-color: #060644;
   text-align: center;
   padding: 0.5em;
@@ -177,6 +178,11 @@ main .signInAria form .btnDiv .signUp {
 }
 
 main .signInAria form .btnDiv .signUp:hover {
+  background-color: #1b36ce;
+  cursor: pointer;
+}
+
+main .signInAria form .btnDiv .reset:hover {
   background-color: #1b36ce;
   cursor: pointer;
 }
@@ -247,6 +253,35 @@ h1 {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin: 1em 0.4em;
+  padding: 0.5em 0;
+  color: #918b8b;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainSvg h1 {
+    font-size: 1em;
+  }
+  form {
+    width: 50%;
+  }
+  form #logo {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

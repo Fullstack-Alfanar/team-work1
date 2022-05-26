@@ -136,7 +136,8 @@ main {
                     font-weight: bold;
                 }
 
-                .signUp {
+                .signUp,
+                .reset {
                     background-color: rgb(6, 6, 68);
                     text-align: center;
                     padding: 0.5em;
@@ -152,6 +153,11 @@ main {
                 }
 
                 .signUp:hover {
+                    background-color: rgb(27, 54, 206);
+                    cursor: pointer;
+                }
+
+                .reset:hover {
                     background-color: rgb(27, 54, 206);
                     cursor: pointer;
                 }
@@ -177,7 +183,7 @@ main {
             font-size: 0.5em;
             color: #D83D3D;
             font-weight: lighter;
-           
+
 
 
         }
@@ -190,9 +196,9 @@ main {
             height: .2em;
             bottom: 0;
             z-index: -1;
-          
 
-            
+
+
 
 
         }
@@ -226,3 +232,34 @@ h1 {
 
     }
 }
+
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin: 1em 0.4em;
+    padding: 0.5em 0;
+    color: rgb(145, 139, 139);
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainSvg {
+        h1 {
+            font-size: 1em;
+        }
+    }
+
+    form {
+        width: 50%;
+
+        #logo {
+            width: 50%;
+        }
+    }
+}/// still not responsive
