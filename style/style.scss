@@ -92,14 +92,14 @@ main {
                     outline: none;
                     width: 50%;
                     font-size: 1em;
-                    color:#444;
+                    color: #444;
                 }
 
                 label {
                     padding-left: 0.5em;
                 }
 
-                
+
 
 
 
@@ -110,45 +110,50 @@ main {
                 display: flex;
                 flex-direction: column;
 
-                .signIn  {
+                .signIn {
                     background-color: $headerBackgroundColor;
                     text-align: center;
                     padding: 0.5em;
                     margin: 0.8em 0;
                     color: white;
                     font-weight: border;
-                    width: 10em;
+                    width: 21em;
                     height: 2.5em;
                     border: 1px solid $headerBackgroundColor;
                     font-size: 1.2em;
                     border-radius: 0.6em;
                     text-transform: uppercase;
+                    cursor: pointer;
                 }
-                .signIn:hover{
+
+                .signIn:hover {
                     background-color: rgb(83, 5, 15);
                 }
 
-                .special_txt{
+                .special_txt {
                     margin: 0;
-                    color: rgb(82, 6, 6);
+                    color: red;
+                    font-weight: bold;
                 }
 
-                .signUp  {
+                .signUp {
                     background-color: rgb(6, 6, 68);
                     text-align: center;
                     padding: 0.5em;
                     margin: 0.8em 0;
                     color: white;
                     font-weight: border;
-                    width: 10em;
+                    width: 21em;
                     height: 2.5em;
                     border: 1px solid rgb(6, 6, 68);
                     font-size: 1.2em;
                     border-radius: 0.6em;
                     text-transform: uppercase;
                 }
-                .signUp:hover{
+
+                .signUp:hover {
                     background-color: rgb(27, 54, 206);
+                    cursor: pointer;
                 }
             }
 
@@ -172,6 +177,8 @@ main {
             font-size: 0.5em;
             color: #D83D3D;
             font-weight: lighter;
+           
+
 
         }
 
@@ -183,6 +190,10 @@ main {
             height: .2em;
             bottom: 0;
             z-index: -1;
+          
+
+            
+
 
         }
     }
@@ -193,6 +204,25 @@ main {
         left: 0;
         top: 250px;
         bottom: 100px;
+
+    }
+}
+
+form,
+img,
+h1 {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
 
     }
 }

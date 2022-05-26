@@ -142,12 +142,13 @@ main .signInAria form .btnDiv .signIn {
   margin: 0.8em 0;
   color: white;
   font-weight: border;
-  width: 10em;
+  width: 21em;
   height: 2.5em;
   border: 1px solid #D83D3D;
   font-size: 1.2em;
   border-radius: 0.6em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 main .signInAria form .btnDiv .signIn:hover {
@@ -156,7 +157,8 @@ main .signInAria form .btnDiv .signIn:hover {
 
 main .signInAria form .btnDiv .special_txt {
   margin: 0;
-  color: #520606;
+  color: red;
+  font-weight: bold;
 }
 
 main .signInAria form .btnDiv .signUp {
@@ -166,7 +168,7 @@ main .signInAria form .btnDiv .signUp {
   margin: 0.8em 0;
   color: white;
   font-weight: border;
-  width: 10em;
+  width: 21em;
   height: 2.5em;
   border: 1px solid #060644;
   font-size: 1.2em;
@@ -176,6 +178,7 @@ main .signInAria form .btnDiv .signUp {
 
 main .signInAria form .btnDiv .signUp:hover {
   background-color: #1b36ce;
+  cursor: pointer;
 }
 
 .mainSvg {
@@ -212,5 +215,38 @@ main .signInAria form .btnDiv .signUp:hover {
   left: 0;
   top: 250px;
   bottom: 100px;
+}
+
+form,
+img,
+h1 {
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
