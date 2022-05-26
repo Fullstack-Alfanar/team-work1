@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$headerBackgroundColor: #D83D3D;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 90px;
+    background-color: $headerBackgroundColor;
+
+    .logo {
+        text-decoration: none;
+        color: white;
+        font-size: 3em;
+        padding: 0.5em 1em;
+        font-family: 'Pacifico', cursive;
+        font-weight: lighter;
+
+
+        span {
+            font-style: italic;
+            font-family: 'Anton', sans-serif;
+        }
+    }
+}
+
+
+body {
+
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .signInAria {
+        position: absolute;
+        top: 15px;
+        margin-bottom: 10px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 40%;
+
+
+        padding: 2em;
+        margin-top: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 15px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 30px;
+
+            .inputDiv {
+                width: 100%;
+                height: 50px;
+                background-color: rgb(233, 221, 221);
+                margin: 10px 0;
+                border: 2px solid $headerBackgroundColor;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+
+                i {
+                    flex: 1;
+                    text-align: center;
+                    color: #666;
+                    font-size: 1.1em;
+                }
+
+                input {
+                    flex: 5;
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 50%;
+                    font-size: 1em;
+                    color: #444;
+                }
+
+                label {
+                    padding-left: 0.5em;
+                }
+
+
+
+
+
+            }
+
+            .btnDiv {
+
+                display: flex;
+                flex-direction: column;
+
+                .signIn {
+                    background-color: $headerBackgroundColor;
+                    text-align: center;
+                    padding: 0.5em;
+                    margin: 0.8em 0;
+                    color: white;
+                    font-weight: border;
+                    width: 21em;
+                    height: 2.5em;
+                    border: 1px solid $headerBackgroundColor;
+                    font-size: 1.2em;
+                    border-radius: 0.6em;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                }
+
+                .signIn:hover {
+                    background-color: rgb(83, 5, 15);
+                }
+
+                .special_txt {
+                    margin: 0;
+                    color: red;
+                    font-weight: bold;
+                    text-decoration: none;
+
+                }
+
+                .signUp,
+                .reset {
+                    background-color: rgb(6, 6, 68);
+                    text-align: center;
+                    padding: 0.5em;
+                    margin: 0.8em 0;
+                    color: white;
+                    font-weight: border;
+                    width: 21em;
+                    height: 2.5em;
+                    border: 1px solid rgb(6, 6, 68);
+                    font-size: 1.2em;
+                    border-radius: 0.6em;
+                    text-transform: uppercase;
+                }
+
+                .signUp:hover {
+                    background-color: rgb(27, 54, 206);
+                    cursor: pointer;
+                }
+
+                .reset:hover {
+                    background-color: rgb(27, 54, 206);
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+    }
+}
+
+
+.mainSvg {
+    width: 100%;
+
+    h1 {
+        padding: 0.5em 3em 0 1em;
+        color: rgb(49, 50, 70);
+        font-size: 3.5em;
+        font-family: 'Bebas Neue', cursive;
+
+        span {
+            font-family: 'Pacifico', cursive;
+            font-size: 0.5em;
+            color: #D83D3D;
+            font-weight: lighter;
+            position: relative;
+
+
+
+        }
+
+        span::before {
+            content: '';
+            position: absolute;
+            width: 11em;
+            background-color: rgb(123, 148, 123);
+            height: .2em;
+            bottom: 0;
+            z-index: -1;
+
+
+
+
+
+        }
+    }
+
+    img {
+        position: absolute;
+        max-width: 45%;
+        left: 0;
+        top: 250px;
+        bottom: 100px;
+
+    }
+}
+
+form,
+img,
+h1 {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin: 1em 0.4em;
+    padding: 0.5em 0;
+    color: rgb(145, 139, 139);
+}
+
+// @media only screen and (max-width: 480px) {
+
+//     body {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .mainSvg {
+//         h1 {
+//             font-size: 1em;
+//         }
+//     }
+
+//     form {
+//         width: 50%;
+
+//         #logo {
+//             width: 50%;
+//         }
+//     }
+// }/// still not responsive

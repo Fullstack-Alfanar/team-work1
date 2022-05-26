@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  height: 90px;
+  background-color: #D83D3D;
+}
+
+header .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 3em;
+  padding: 0.5em 1em;
+  font-family: 'Pacifico', cursive;
+  font-weight: lighter;
+}
+
+header .logo span {
+  font-style: italic;
+  font-family: 'Anton', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .signInAria {
+  position: absolute;
+  top: 15px;
+  margin-bottom: 10px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 40%;
+  padding: 2em;
+  margin-top: 40px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+
+main .signInAria form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+}
+
+main .signInAria form .inputDiv {
+  width: 100%;
+  height: 50px;
+  background-color: #e9dddd;
+  margin: 10px 0;
+  border: 2px solid #D83D3D;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .signInAria form .inputDiv i {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  color: #666;
+  font-size: 1.1em;
+}
+
+main .signInAria form .inputDiv input {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  background: none;
+  border: none;
+  outline: none;
+  width: 50%;
+  font-size: 1em;
+  color: #444;
+}
+
+main .signInAria form .inputDiv label {
+  padding-left: 0.5em;
+}
+
+main .signInAria form .btnDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .signInAria form .btnDiv .signIn {
+  background-color: #D83D3D;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.8em 0;
+  color: white;
+  font-weight: border;
+  width: 21em;
+  height: 2.5em;
+  border: 1px solid #D83D3D;
+  font-size: 1.2em;
+  border-radius: 0.6em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main .signInAria form .btnDiv .signIn:hover {
+  background-color: #53050f;
+}
+
+main .signInAria form .btnDiv .special_txt {
+  margin: 0;
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main .signInAria form .btnDiv .signUp,
+main .signInAria form .btnDiv .reset {
+  background-color: #060644;
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.8em 0;
+  color: white;
+  font-weight: border;
+  width: 21em;
+  height: 2.5em;
+  border: 1px solid #060644;
+  font-size: 1.2em;
+  border-radius: 0.6em;
+  text-transform: uppercase;
+}
+
+main .signInAria form .btnDiv .signUp:hover {
+  background-color: #1b36ce;
+  cursor: pointer;
+}
+
+main .signInAria form .btnDiv .reset:hover {
+  background-color: #1b36ce;
+  cursor: pointer;
+}
+
+.mainSvg {
+  width: 100%;
+}
+
+.mainSvg h1 {
+  padding: 0.5em 3em 0 1em;
+  color: #313246;
+  font-size: 3.5em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.mainSvg h1 span {
+  font-family: 'Pacifico', cursive;
+  font-size: 0.5em;
+  color: #D83D3D;
+  font-weight: lighter;
+  position: relative;
+}
+
+.mainSvg h1 span::before {
+  content: '';
+  position: absolute;
+  width: 11em;
+  background-color: #7b947b;
+  height: .2em;
+  bottom: 0;
+  z-index: -1;
+}
+
+.mainSvg img {
+  position: absolute;
+  max-width: 45%;
+  left: 0;
+  top: 250px;
+  bottom: 100px;
+}
+
+form,
+img,
+h1 {
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-2em);
+            transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin: 1em 0.4em;
+  padding: 0.5em 0;
+  color: #918b8b;
+}
+/*# sourceMappingURL=style.css.map */
