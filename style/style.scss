@@ -135,7 +135,7 @@ main {
                     color: red;
                     font-weight: bold;
                     text-decoration: none;
-                    
+
                 }
 
                 .signUp,
@@ -245,24 +245,24 @@ h3 {
     color: rgb(145, 139, 139);
 }
 
-/*@media only screen and (max-width: 480px) {
+// @media only screen and (max-width: 480px) {
 
-    body {
-        display: flex;
-        flex-direction: column;
-    }
+//     body {
+//         display: flex;
+//         flex-direction: column;
+//     }
 
-    .mainSvg {
-        h1 {
-            font-size: 1em;
-        }
-    }
+//     .mainSvg {
+//         h1 {
+//             font-size: 1em;
+//         }
+//     }
 
-    form {
-        width: 50%;
+//     form {
+//         width: 50%;
 
-        #logo {
-            width: 50%;
-        }
-    }
-}/// still not responsive
+//         #logo {
+//             width: 50%;
+//         }
+//     }
+// }/// still not responsive
