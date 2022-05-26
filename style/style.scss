@@ -183,6 +183,7 @@ main {
             font-size: 0.5em;
             color: #D83D3D;
             font-weight: lighter;
+            position: relative;
 
 
 
@@ -242,7 +243,7 @@ h3 {
     color: rgb(145, 139, 139);
 }
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
 
     body {
         display: flex;

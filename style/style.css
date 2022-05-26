@@ -203,6 +203,7 @@ main .signInAria form .btnDiv .reset:hover {
   font-size: 0.5em;
   color: #D83D3D;
   font-weight: lighter;
+  position: relative;
 }
 
 .mainSvg h1 span::before {
