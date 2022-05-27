@@ -11,7 +11,7 @@ $headerBackgroundColor: #D83D3D;
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+.header {
     height: 90px;
     background-color: $headerBackgroundColor;
 
@@ -33,14 +33,12 @@ header {
 
 
 body {
-
     height: 100vh;
     background-color: #f0f0f0;
 }
 
 
-main {
-    display: flex;
+.main {
     position: relative;
     justify-content: center;
     align-items: center;
@@ -168,105 +166,104 @@ main {
 
         }
     }
-}
 
+    .mainSvg {
+        width: 100%;
 
-.mainSvg {
-    width: 100%;
+        h1 {
+            padding: 0.5em 3em 0 1em;
+            color: rgb(49, 50, 70);
+            font-size: 3.5em;
+            font-family: 'Bebas Neue', cursive;
 
-    h1 {
-        padding: 0.5em 3em 0 1em;
-        color: rgb(49, 50, 70);
-        font-size: 3.5em;
-        font-family: 'Bebas Neue', cursive;
-
-        span {
-            font-family: 'Pacifico', cursive;
-            font-size: 0.5em;
-            color: #D83D3D;
-            font-weight: lighter;
-            position: relative;
+            span {
+                font-family: 'Pacifico', cursive;
+                font-size: 0.5em;
+                color: #D83D3D;
+                font-weight: lighter;
+                position: relative;
 
 
 
+            }
+
+            span::before {
+                content: '';
+                position: absolute;
+                width: 11em;
+                background-color: rgb(123, 148, 123);
+                height: .2em;
+                bottom: 0;
+                z-index: -1;
+
+
+
+
+
+            }
         }
 
-        span::before {
-            content: '';
+        img {
             position: absolute;
-            width: 11em;
-            background-color: rgb(123, 148, 123);
-            height: .2em;
-            bottom: 0;
-            z-index: -1;
+            max-width: 450px;
+            left: 280px;
+            top: 250px;
 
+        }
 
+        .img1 {
+            position: absolute;
+            width: 600px;
+            height: 280px;
+            left: 400px;
+            top: 250px;
+        }
 
-
-
+        .img2 {
+            position: absolute;
+            width: 550px;
+            height: 230px;
+            left: 230px;
+            top: 180px;
         }
     }
 
-    img {
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2em;
+        margin: 1em 0.4em;
+        padding: 0.5em 0;
+        color: rgb(145, 139, 139);
+    }
+
+    h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        font-size: 1.8em;
+        opacity: 0.85;
         position: absolute;
-        max-width: 450px;
-        left: 80px;
-        top: 350px;
+        top: 420px;
+        margin: 0.1em 1.5em;
+        padding-top: 5em 0;
+
 
     }
 
-    .img1 {
-        position: absolute;
-        width: 600px;
-        height: 280px;
-        left: 400px;
-        top: 250px;
+    .h41 {
+        font-size: 4.1em;
+        margin: 0.2em 0.6em;
+        font-family: cursive;
+        font-weight: lighter;
     }
 
-    .img2 {
-        position: absolute;
-        width: 550px;
-        height: 230px;
-        left: 230px;
-        top: 180px;
+    form,
+    img,
+    h1 {
+        animation: fadeIn 2s forwards;
     }
 }
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-    margin: 1em 0.4em;
-    padding: 0.5em 0;
-    color: rgb(145, 139, 139);
-}
 
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: gray;
-    font-size: 1.8em;
-    opacity: 0.85;
-    position: absolute;
-    top: 420px;
-    margin: 0.1em 1.5em;
-    padding-top: 5em 0;
-
-
-}
-
-.h41 {
-    font-size: 4.1em;
-    margin: 0.2em 0.6em;
-    font-family: cursive;
-    font-weight: lighter;
-}
-
-
-
-form,
-img,
-h1 {
-    animation: fadeIn 2s forwards;
-}
-// Added some differenet Animation to each header and image in each page
+// Adding some differenet Animations to each header and image in each page
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -282,8 +279,7 @@ h1 {
 
 form,
 h4,
-.h41
- {
+.h41 {
     animation: fadeIn1 2s forwards;
 }
 
@@ -324,29 +320,61 @@ h4,
         border: rgb(231, 6, 6) dashed 2px;
     }
 }
+/*
+@media only screen and (min-width: 350px) {
+
+    .main {
+        position: relative;
+
+        .signInAria {
+            text-align: center;
+            margin-top: 100px;
+            width: 90%;
+        }
+
+        .mainSvg {
 
 
+            h1 {
+                font-size: 1.5em;
 
+            }
 
-/*@media only screen and (max-width: 480px) {
+            .img1,
+            .img2,
+            h3 {
 
-    body {
-        display: flex;
-        flex-direction: column;
-    }
+                display: hidden;
+            }
 
-    .mainSvg {
-        h1 {
-            font-size: 1em;
         }
     }
 
-    form {
-        width: 50%;
+}
 
-        #logo {
+@media only screen and (min-width: 768px) {
+
+    .main {
+
+        .mainSvg {
             width: 50%;
+
+
+
+            h1 {
+                font-size: 2.5em;
+            }
+
         }
+
+        .signInAria {
+            width: 50%;
+
+
+        }
+
+
     }
-}*/
-// still not responsive
+
+}
+*/
