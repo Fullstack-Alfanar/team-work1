@@ -135,7 +135,7 @@ main {
                     color: red;
                     font-weight: bold;
                     text-decoration: none;
-                    
+
                 }
 
                 .signUp,
@@ -209,20 +209,64 @@ main {
 
     img {
         position: absolute;
-        max-width: 45%;
-        left: 0;
-        top: 250px;
-        bottom: 100px;
+        max-width: 450px;
+        left: 80px;
+        top: 350px;
 
     }
+
+    .img1 {
+        position: absolute;
+        width: 600px;
+        height: 280px;
+        left: 400px;
+        top: 250px;
+    }
+
+    .img2 {
+        position: absolute;
+        width: 550px;
+        height: 230px;
+        left: 230px;
+        top: 180px;
+    }
 }
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin: 1em 0.4em;
+    padding: 0.5em 0;
+    color: rgb(145, 139, 139);
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 1.8em;
+    opacity: 0.85;
+    position: absolute;
+    top: 420px;
+    margin: 0.1em 1.5em;
+    padding-top: 5em 0;
+
+
+}
+
+.h41 {
+    font-size: 4.1em;
+    margin: 0.2em 0.6em;
+    font-family: cursive;
+    font-weight: lighter;
+}
+
+
 
 form,
 img,
 h1 {
     animation: fadeIn 2s forwards;
 }
-
+// Added some differenet Animation to each header and image in each page
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -236,14 +280,53 @@ h1 {
     }
 }
 
-
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-    margin: 1em 0.4em;
-    padding: 0.5em 0;
-    color: rgb(145, 139, 139);
+form,
+h4,
+.h41
+ {
+    animation: fadeIn1 2s forwards;
 }
+
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        transform: translatex(-2em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0);
+
+    }
+}
+
+.h42 {
+
+    color: rgb(3, 2, 100);
+    padding: 0.2em;
+    left: 320px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    animation-name: h42;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes h42 {
+    from {
+        border: none;
+
+    }
+
+    to {
+
+        border: rgb(231, 6, 6) dashed 2px;
+    }
+}
+
+
+
 
 /*@media only screen and (max-width: 480px) {
 
@@ -265,4 +348,5 @@ h3 {
             width: 50%;
         }
     }
-}/// still not responsive
+}*/
+// still not responsive

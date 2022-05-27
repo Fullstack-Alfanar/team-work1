@@ -159,6 +159,7 @@ main .signInAria form .btnDiv .special_txt {
   margin: 0;
   color: red;
   font-weight: bold;
+  text-decoration: none;
 }
 
 main .signInAria form .btnDiv .signUp,
@@ -218,10 +219,51 @@ main .signInAria form .btnDiv .reset:hover {
 
 .mainSvg img {
   position: absolute;
-  max-width: 45%;
-  left: 0;
+  max-width: 450px;
+  left: 80px;
+  top: 350px;
+}
+
+.mainSvg .img1 {
+  position: absolute;
+  width: 600px;
+  height: 280px;
+  left: 400px;
   top: 250px;
-  bottom: 100px;
+}
+
+.mainSvg .img2 {
+  position: absolute;
+  width: 550px;
+  height: 230px;
+  left: 230px;
+  top: 180px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin: 1em 0.4em;
+  padding: 0.5em 0;
+  color: #918b8b;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 1.8em;
+  opacity: 0.85;
+  position: absolute;
+  top: 420px;
+  margin: 0.1em 1.5em;
+  padding-top: 5em 0;
+}
+
+.h41 {
+  font-size: 4.1em;
+  margin: 0.2em 0.6em;
+  font-family: cursive;
+  font-weight: lighter;
 }
 
 form,
@@ -257,32 +299,90 @@ h1 {
   }
 }
 
-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
-  margin: 1em 0.4em;
-  padding: 0.5em 0;
-  color: #918b8b;
+form,
+h4,
+.h41 {
+  -webkit-animation: fadeIn1 2s forwards;
+          animation: fadeIn1 2s forwards;
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@-webkit-keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(-2em);
+            transform: translatex(-2em);
   }
-  .mainSvg h1 {
-    font-size: 1em;
-  }
-  form {
-    width: 50%;
-  }
-  form #logo {
-    width: 50%;
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
   }
 }
+
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(-2em);
+            transform: translatex(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+}
+
+.h42 {
+  color: #030264;
+  padding: 0.2em;
+  left: 320px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  -webkit-animation-name: h42;
+          animation-name: h42;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes h42 {
+  from {
+    border: none;
+  }
+  to {
+    border: #e70606 dashed 2px;
+  }
+}
+
+@keyframes h42 {
+  from {
+    border: none;
+  }
+  to {
+    border: #e70606 dashed 2px;
+  }
+}
+
+/*@media only screen and (max-width: 480px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainSvg {
+        h1 {
+            font-size: 1em;
+        }
+    }
+
+    form {
+        width: 50%;
+
+        #logo {
+            width: 50%;
+        }
+    }
+}*/
 /*# sourceMappingURL=style.css.map */
