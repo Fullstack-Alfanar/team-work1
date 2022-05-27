@@ -5,8 +5,8 @@ function signIn() {
     let passwordIn = document.getElementById("passwordInput");
     let errorLabel = document.getElementById("errorMessage");
 
-    let emailValid;
     let displayError = false;
+    let emailValid = false;
     let passwordValid = passwordIn.value != null && passwordIn.value != "" ? true : false;
 
     if (emailIn.value != null && emailIn.value != "")
@@ -25,6 +25,7 @@ function signIn() {
         }
     }
     else displayError = true;
+
     if (displayError) {
         errorLabel.innerText = "Wrong Email or Password!";
     }
