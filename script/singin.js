@@ -22,7 +22,7 @@ function signIn() {
         if (checkIfUserIsRegistered(user)) {
             saveToCookies(user);
             window.location.replace("/pages/dashboard.html");
-        }
+        } else displayError = true;
     }
     else displayError = true;
 
