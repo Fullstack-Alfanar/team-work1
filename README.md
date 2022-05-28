@@ -14,6 +14,12 @@ The repository containins several files that build the project
 | library | Contains  images or logo that used on the pages |
 
 
+## Installation 
+- copy http repository:  ```https://github.com/Fullstack-Alfanar/team-work1.git```
+- open `Visual Studio Code` 
+- open a new terminal
+- type `git clone` and paste the link 
+- type a command `code .`
 
 ## Usage 
 
@@ -38,12 +44,7 @@ by the functions that handle forget Password
 ```
 
 
-## Installation 
-- copy http repository:  ```https://github.com/Fullstack-Alfanar/team-work1.git```
-- open `Visual Studio Code` 
-- open a new terminal
-- type `git clone` and paste the link 
-- type a command `code .`
+
 
 ## Demo System 
 please visit our website:  
