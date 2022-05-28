@@ -10,12 +10,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-header {
+.header {
   height: 90px;
   background-color: #D83D3D;
 }
 
-header .logo {
+.header .logo {
   text-decoration: none;
   color: white;
   font-size: 3em;
@@ -24,7 +24,7 @@ header .logo {
   font-weight: lighter;
 }
 
-header .logo span {
+.header .logo span {
   font-style: italic;
   font-family: 'Anton', sans-serif;
 }
@@ -34,10 +34,7 @@ body {
   background-color: #f0f0f0;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -47,7 +44,7 @@ main {
           align-items: center;
 }
 
-main .signInAria {
+.main .signInAria {
   position: absolute;
   top: 15px;
   margin-bottom: 10px;
@@ -68,7 +65,7 @@ main .signInAria {
   border-radius: 15px;
 }
 
-main .signInAria form {
+.main .signInAria form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,7 +82,7 @@ main .signInAria form {
   padding: 10px 30px;
 }
 
-main .signInAria form .inputDiv {
+.main .signInAria form .inputDiv {
   width: 100%;
   height: 50px;
   background-color: #e9dddd;
@@ -100,7 +97,7 @@ main .signInAria form .inputDiv {
           align-items: center;
 }
 
-main .signInAria form .inputDiv i {
+.main .signInAria form .inputDiv i {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -109,7 +106,7 @@ main .signInAria form .inputDiv i {
   font-size: 1.1em;
 }
 
-main .signInAria form .inputDiv input {
+.main .signInAria form .inputDiv input {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
@@ -121,11 +118,11 @@ main .signInAria form .inputDiv input {
   color: #444;
 }
 
-main .signInAria form .inputDiv label {
+.main .signInAria form .inputDiv label {
   padding-left: 0.5em;
 }
 
-main .signInAria form .btnDiv {
+.main .signInAria form .btnDiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +132,7 @@ main .signInAria form .btnDiv {
           flex-direction: column;
 }
 
-main .signInAria form .btnDiv .signIn {
+.main .signInAria form .btnDiv .signIn {
   background-color: #D83D3D;
   text-align: center;
   padding: 0.5em;
@@ -151,19 +148,23 @@ main .signInAria form .btnDiv .signIn {
   cursor: pointer;
 }
 
-main .signInAria form .btnDiv .signIn:hover {
+.main .signInAria form .btnDiv .signIn:hover {
   background-color: #53050f;
 }
 
-main .signInAria form .btnDiv .special_txt {
+.main .signInAria form .btnDiv .special_txt {
   margin: 0;
   color: red;
   font-weight: bold;
   text-decoration: none;
 }
 
-main .signInAria form .btnDiv .signUp,
-main .signInAria form .btnDiv .reset {
+.main .signInAria form .btnDiv .signUp {
+  text-decoration: none;
+}
+
+.main .signInAria form .btnDiv .signUp,
+.main .signInAria form .btnDiv .reset {
   background-color: #060644;
   text-align: center;
   padding: 0.5em;
@@ -178,28 +179,28 @@ main .signInAria form .btnDiv .reset {
   text-transform: uppercase;
 }
 
-main .signInAria form .btnDiv .signUp:hover {
+.main .signInAria form .btnDiv .signUp:hover {
   background-color: #1b36ce;
   cursor: pointer;
 }
 
-main .signInAria form .btnDiv .reset:hover {
+.main .signInAria form .btnDiv .reset:hover {
   background-color: #1b36ce;
   cursor: pointer;
 }
 
-.mainSvg {
+.main .mainSvg {
   width: 100%;
 }
 
-.mainSvg h1 {
+.main .mainSvg h1 {
   padding: 0.5em 3em 0 1em;
   color: #313246;
   font-size: 3.5em;
   font-family: 'Bebas Neue', cursive;
 }
 
-.mainSvg h1 span {
+.main .mainSvg h1 span {
   font-family: 'Pacifico', cursive;
   font-size: 0.5em;
   color: #D83D3D;
@@ -207,7 +208,7 @@ main .signInAria form .btnDiv .reset:hover {
   position: relative;
 }
 
-.mainSvg h1 span::before {
+.main .mainSvg h1 span::before {
   content: '';
   position: absolute;
   width: 11em;
@@ -217,17 +218,58 @@ main .signInAria form .btnDiv .reset:hover {
   z-index: -1;
 }
 
-.mainSvg img {
+.main .mainSvg img {
   position: absolute;
-  max-width: 45%;
-  left: 0;
+  max-width: 450px;
+  left: 280px;
   top: 250px;
-  bottom: 100px;
 }
 
-form,
-img,
-h1 {
+.main .mainSvg .img1 {
+  position: absolute;
+  width: 600px;
+  height: 280px;
+  left: 400px;
+  top: 250px;
+}
+
+.main .mainSvg .img2 {
+  position: absolute;
+  width: 550px;
+  height: 230px;
+  left: 230px;
+  top: 180px;
+}
+
+.main h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2em;
+  margin: 1em 0.4em;
+  padding: 0.5em 0;
+  color: #918b8b;
+}
+
+.main h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 1.8em;
+  opacity: 0.85;
+  position: absolute;
+  top: 420px;
+  margin: 0.1em 1.5em;
+  padding-top: 5em 0;
+}
+
+.main .h41 {
+  font-size: 4.1em;
+  margin: 0.2em 0.6em;
+  font-family: cursive;
+  font-weight: lighter;
+}
+
+.main form,
+.main img,
+.main h1 {
   -webkit-animation: fadeIn 2s forwards;
           animation: fadeIn 2s forwards;
 }
@@ -258,11 +300,360 @@ h1 {
   }
 }
 
-h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2em;
-  margin: 1em 0.4em;
-  padding: 0.5em 0;
-  color: #918b8b;
+form,
+h4,
+.h41 {
+  -webkit-animation: fadeIn1 2s forwards;
+          animation: fadeIn1 2s forwards;
 }
+
+@-webkit-keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(-2em);
+            transform: translatex(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+}
+
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+    -webkit-transform: translatex(-2em);
+            transform: translatex(-2em);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+}
+
+.h42 {
+  color: #030264;
+  padding: 0.2em;
+  left: 320px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  -webkit-animation-name: h42;
+          animation-name: h42;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes h42 {
+  from {
+    border: none;
+  }
+  to {
+    border: #e70606 dashed 2px;
+  }
+}
+
+@keyframes h42 {
+  from {
+    border: none;
+  }
+  to {
+    border: #e70606 dashed 2px;
+  }
+}
+
+/*
+@media only screen and (min-width: 350px) {
+
+    .main {
+        position: relative;
+
+        .signInAria {
+            text-align: center;
+            margin-top: 100px;
+            width: 90%;
+        }
+
+        .mainSvg {
+
+
+            h1 {
+                font-size: 1.5em;
+
+            }
+
+            .img1,
+            .img2,
+            h3 {
+
+                display: hidden;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    .main {
+
+        .mainSvg {
+            width: 50%;
+
+
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+        }
+
+        .signInAria {
+            width: 50%;
+
+
+        }
+
+
+    }
+
+}
+
+
+/*# sourceMappingURL=style.css.map */ 
+
+/* design to dashboard page */
+
+.img{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; 
+  margin-left: 1100px; 
+  margin-top: 20px;
+
+}  
+.iconLogOut{
+  margin-left: 20px; 
+
+}  
+
+.subtitle{
+ background-color: beige; 
+ margin-left: 20px;  
+
+ 
+} 
+
+.imgProfile{
+  width: 50px;
+  height: 50px; 
+ 
+}  
+
+.labelA{
+  padding-left: 30px; 
+  
+}  
+.container{
+  display: flex; 
+
+} 
+
+.asideSection{
+  display: flex;
+}
+
+.holderName{
+
+  color: #B4BBBF; 
+  margin-left: 30px;
+} 
+
+.moveName{
+  margin-left: 30px;
+} 
+
+.div3{
+  margin-left: 70px; 
+  margin-top: 15px;
+
+} 
+
+.AccNum{ 
+  color: #B4BBBF;  
+  padding-right: 20px;
+ 
+
+} 
+.main{
+  background-color: beige; 
+  margin-top: 20px; 
+  margin-left: 209px; 
+  
+} 
+
+.tableT{
+  margin-right: 800px;
+  margin-top: 20px;
+}  
+
+
+
+.myTable{
+  margin-left: 280px; 
+  margin-top: 30px; 
+  border-collapse:separate;
+ border-spacing:0 15px;
+} 
+
+th{
+  padding-left: 50px;  
+  border-bottom: 1px solid #99A5AA;
+} 
+
+td{
+  padding-left: 50px; 
+  border-bottom: 1px solid #99A5AA;
+
+}
+
+.div1{
+  padding-left: 30px; 
+  margin-top: 10px;
+} 
+
+.div2{
+  margin-top: 15px;  
+  
+  
+}
+
+.sideBar{
+  background-color: beige; 
+  width: 200px;  
+  height: 100%;
+ 
+  
+
+}  
+.move{
+  margin-left:30px; 
+  padding-top: 25px;
+ 
+
+}
+
+
+
+.label1{
+  margin-right: 10px;
+} 
+
+.fundImg{ 
+  width: 20px; 
+  height: 20px;
+  margin-left:30px; 
+  margin-top: 25px; 
+
+} 
+
+.carde{
+  margin-left: 250px; 
+  margin-top: 80px;
+} 
+
+.iconCard{
+  padding-left: 100px;
+} 
+
+.charts{
+ width: 500px; 
+ margin-bottom: 50px;
+ 
+} 
+.leftAside{
+  float: right; 
+  margin-right: 20px ;  
+  margin-top: 30px; 
+  
+ 
+}  
+ 
+.borderDiv1{
+  border: 1px solid black; 
+  padding-left: 10px; 
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+} 
+
+.borderdiv2{
+  border: 1px solid black; 
+  padding-left: 10px; 
+  padding-bottom: 10px; 
+  margin-top: 20px;
+   padding-top: 10px;
+}
+
+
+.c-num{
+  margin-left: 10px;
+} 
+.moveDiv{
+  margin-top: 30px;
+} 
+
+.moveLabel{
+  margin-left: 50px; 
+  color: red;
+} 
+.divCredit{
+  padding-top: 20px; 
+
+}  
+
+.styleImg{
+  width: 50px; 
+  margin-left: 10px; 
+  
+}  
+
+.moveTT{
+  padding-top: 18px;
+}
+
+.container1{
+  display: flex;
+} 
+
+
+
+.moveBtn{
+  margin-left: 50px; 
+  margin-top: 30px;
+}  
+
+
+
+.btn1{
+  background-color: #D83D3D; 
+  border-radius: 10px;  
+
+  color: white ; 
+  font-size:medium; 
+  border-color: transparent;
+
+}  
+
+.disappear{
+ visibility: hidden;
+
+}
+
+
+*/
 /*# sourceMappingURL=style.css.map */
