@@ -29,8 +29,11 @@
   font-family: 'Anton', sans-serif;
 }
 
+#logo {
+  text-align: center;
+}
+
 body {
-  height: 100vh;
   background-color: #f0f0f0;
 }
 
@@ -49,13 +52,6 @@ body {
   top: 15px;
   margin-bottom: 10px;
   right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: white;
   width: 40%;
   padding: 2em;
@@ -66,19 +62,6 @@ body {
 }
 
 .main .signInAria form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 10px 30px;
 }
 
@@ -89,9 +72,6 @@ body {
   margin: 10px 0;
   border: 2px solid #D83D3D;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -120,16 +100,6 @@ body {
 
 .main .signInAria form .inputDiv label {
   padding-left: 0.5em;
-}
-
-.main .signInAria form .btnDiv {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .main .signInAria form .btnDiv .signIn {
@@ -196,7 +166,7 @@ body {
 .main .mainSvg h1 {
   padding: 0.5em 3em 0 1em;
   color: #313246;
-  font-size: 3.5em;
+  font-size: 3.1em;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -229,8 +199,8 @@ body {
   position: absolute;
   width: 600px;
   height: 280px;
-  left: 400px;
-  top: 250px;
+  left: 380px;
+  top: 220px;
 }
 
 .main .mainSvg .img2 {
@@ -365,63 +335,73 @@ h4,
   }
 }
 
-/*
-@media only screen and (min-width: 350px) {
-
-    .main {
-        position: relative;
-
-        .signInAria {
-            text-align: center;
-            margin-top: 100px;
-            width: 90%;
-        }
-
-        .mainSvg {
-
-
-            h1 {
-                font-size: 1.5em;
-
-            }
-
-            .img1,
-            .img2,
-            h3 {
-
-                display: hidden;
-            }
-
-        }
-    }
-
+/* Column container */
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px) {
-
-    .main {
-
-        .mainSvg {
-            width: 50%;
-
-
-
-            h1 {
-                font-size: 2.5em;
-            }
-
-        }
-
-        .signInAria {
-            width: 50%;
-
-
-        }
-
-
-    }
-
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.mainSvg {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
 }
+
+/* Main column */
+.signInAria {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+}
+
+
+/* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .mainSvg img {
+    text-align: center;
+  }
+  .main .mainSvg .img1,
+  .main .mainSvg .img2,
+  .main .mainSvg .img3 {
+    display: none;
+  }
+  .main .mainSvg h1 {
+    font-size: 1.8em;
+  }
+  .main .signInAria {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .main .signInAria .inputDiv {
+    min-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+  }
+  .main .signInAria .inputDiv input {
+    min-width: 100%;
+  }
+  .main .signInAria .btnDiv .signIn,
+  .main .signInAria .btnDiv .signUp, .main .signInAria .btnDiv .reset {
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
 
 
 /*# sourceMappingURL=style.css.map */ 
