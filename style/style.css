@@ -159,6 +159,10 @@ body {
   text-decoration: none;
 }
 
+.main .signInAria form .btnDiv .signUp {
+  text-decoration: none;
+}
+
 .main .signInAria form .btnDiv .signUp,
 .main .signInAria form .btnDiv .reset {
   background-color: #060644;
@@ -419,5 +423,4 @@ h4,
 
 }
 */
-
 /*# sourceMappingURL=style.css.map */
