@@ -159,6 +159,10 @@ body {
   text-decoration: none;
 }
 
+.main .signInAria form .btnDiv .signUp {
+  text-decoration: none;
+}
+
 .main .signInAria form .btnDiv .signUp,
 .main .signInAria form .btnDiv .reset {
   background-color: #060644;
@@ -419,6 +423,7 @@ h4,
 
 }
 
+
 /*# sourceMappingURL=style.css.map */ 
 
 /* design to dashboard page */
@@ -641,12 +646,14 @@ td{
   color: white ; 
   font-size:medium; 
   border-color: transparent;
-<<<<<<< HEAD
+
 }  
 
 .disappear{
  visibility: hidden;
-=======
->>>>>>> eae250ab4e1ba7cc5fa6da065d792e95096e0a45
+
 }
 
+
+*/
+/*# sourceMappingURL=style.css.map */
