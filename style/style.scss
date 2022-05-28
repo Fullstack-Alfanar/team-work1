@@ -210,7 +210,7 @@ body {
             position: absolute;
             width: 600px;
             height: 280px;
-            left: 340px;
+            left: 380px;
             top: 220px;
         }
 
@@ -337,7 +337,7 @@ h4,
 
 
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
     .main {
         flex-direction: column;
@@ -367,9 +367,9 @@ h4,
             .inputDiv{
                 min-width: 100%;
                 display: flex;
+                flex-direction: initial;
                 input{
                     min-width: 100%;
-                    text-align: start;
                 }
             }
 
