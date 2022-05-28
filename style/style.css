@@ -346,7 +346,9 @@ h3 {
 
 .myTable{
   margin-left: 280px; 
-  margin-top: 30px;
+  margin-top: 30px; 
+  border-collapse:separate;
+ border-spacing:0 15px;
 } 
 
 th{
@@ -485,4 +487,9 @@ td{
   color: white ; 
   font-size:medium; 
   border-color: transparent;
+}  
+
+.disappear{
+ visibility: hidden;
 }
+
