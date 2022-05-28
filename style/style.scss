@@ -131,6 +131,10 @@ body {
 
                 }
 
+                .signUp {
+                    text-decoration: none;
+                }
+
                 .signUp,
                 .reset {
                     background-color: rgb(6, 6, 68);
@@ -316,6 +320,13 @@ h4,
     }
 }
 
+
+/*
+@media only screen and (min-width: 350px) {
+
+    .main {
+        position: relative;
+
 /* Column container */
 .row {
     display: flex;
@@ -384,4 +395,18 @@ h4,
 
 
     }
+
+
 }
+
+*/
+
+
+//         #logo {
+//             width: 50%;
+//         }
+//     }
+// }/// still not responsive 
+*/
+
+
