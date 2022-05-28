@@ -31,9 +31,11 @@ $headerBackgroundColor: #D83D3D;
     }
 }
 
+#logo {
+    text-align: center;
+}
 
 body {
-    height: 100vh;
     background-color: #f0f0f0;
 }
 
@@ -48,8 +50,6 @@ body {
         top: 15px;
         margin-bottom: 10px;
         right: 20px;
-        display: flex;
-        flex-direction: column;
         background-color: white;
         width: 40%;
 
@@ -60,10 +60,7 @@ body {
         border-radius: 15px;
 
         form {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
             padding: 10px 30px;
 
             .inputDiv {
@@ -73,7 +70,6 @@ body {
                 margin: 10px 0;
                 border: 2px solid $headerBackgroundColor;
                 border-radius: 50px;
-                display: flex;
                 align-items: center;
 
                 i {
@@ -105,8 +101,7 @@ body {
 
             .btnDiv {
 
-                display: flex;
-                flex-direction: column;
+
 
                 .signIn {
                     background-color: $headerBackgroundColor;
@@ -173,7 +168,7 @@ body {
         h1 {
             padding: 0.5em 3em 0 1em;
             color: rgb(49, 50, 70);
-            font-size: 3.5em;
+            font-size: 3.1em;
             font-family: 'Bebas Neue', cursive;
 
             span {
@@ -215,8 +210,8 @@ body {
             position: absolute;
             width: 600px;
             height: 280px;
-            left: 400px;
-            top: 250px;
+            left: 340px;
+            top: 220px;
         }
 
         .img2 {
@@ -320,62 +315,73 @@ h4,
         border: rgb(231, 6, 6) dashed 2px;
     }
 }
-/*
-@media only screen and (min-width: 350px) {
 
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.mainSvg {
+    flex: 40%;
+}
+
+/* Main column */
+.signInAria {
+    flex: 60%;
+
+}
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
     .main {
-        position: relative;
+        flex-direction: column;
 
-        .signInAria {
-            text-align: center;
-            margin-top: 100px;
-            width: 90%;
-        }
+
 
         .mainSvg {
-
-
-            h1 {
-                font-size: 1.5em;
-
+            img {
+                text-align: center;
             }
 
             .img1,
             .img2,
-            h3 {
-
-                display: hidden;
+            .img3 {
+                display: none;
             }
-
-        }
-    }
-
-}
-
-@media only screen and (min-width: 768px) {
-
-    .main {
-
-        .mainSvg {
-            width: 50%;
-
-
 
             h1 {
-                font-size: 2.5em;
+                font-size: 1.8em;
             }
-
         }
 
         .signInAria {
-            width: 50%;
+            margin-top: 10%;
+            width: 100%;
 
+            .inputDiv{
+                min-width: 100%;
+                display: flex;
+                input{
+                    min-width: 100%;
+                    text-align: start;
+                }
+            }
 
+            .btnDiv {
+
+                .signIn,
+                .signUp {
+                    min-width: 100%;
+                }
+            }
         }
 
 
     }
-
 }
-*/
-
