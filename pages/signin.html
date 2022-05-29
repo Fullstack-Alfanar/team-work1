@@ -11,43 +11,44 @@
 </head>
 
 <body>
-
-
     <div class="header">
 
         <a class="logo" href="/">my<span>Bank</span></a>
 
     </div>
 
-   <div class="main">
-    <div class="mainSvg">
-        <h1> We Keep Customerers <span>Coming Back For More !</span> </h1>
-        <img class="img1" src="../library/mainPageimage.svg" alt="" srcset="">
-        <h4 >Better Banking </h4>
-        <h4 class="h41">Higher Purpose.</h4>
+    <div class="main">
+        <div class="mainSvg">
+            <h1> We Keep Customers <span>Coming Back For More !</span> </h1>
+            <img class="img1" src="../library/mainPageimage.svg" alt="" srcset="">
+            <h4>Better Banking </h4>
+            <h4 class="h41">Higher Purpose.</h4>
 
-    </div>
+
+
+
+                        </div>
     <div class="signInAria">
         
         <form onsubmit="return false;">
             <div id="logo"><img src="../library/logo.svg" alt="logo"></div>
-
-            <div class="inputDiv">
-                <label>Email</label>
-                <i class="bi bi-person-fill"></i>
-                <input type="email" placeholder=" Your Email">
-            </div>
-            <div class="inputDiv">
+                <div class="inputDiv">
+                    <label>Email</label>
+                    <i class="bi bi-person-fill"></i>
+                    <input id="emailInput" type="email" placeholder="Email">
+                </div>
+          
+                <div class="inputDiv">
                     <label>Password</label>
                     <i class="bi bi-lock-fill"></i>
-                    <input type="password" placeholder=" Password">               
-            </div>
+                    <input id="passwordInput" type="password" placeholder="Password">
+                </div>
 
 
                 <div class="btnDiv">
                     <a href="forgotPassword.html" class="special_txt">Forget Password</a>
                     <label id="errorMessage"></label>
-                    <button class="signIn">Sign in</button>
+                    <button id="signInBtn" class="signIn">Sign in</button>
                     <a href="signup.html" class="signUp">Sign up</a>
                 </div>
 
