@@ -375,11 +375,12 @@ h4,
             margin-top: 10%;
             width: 100%;
 
-            .inputDiv{
+            .inputDiv {
                 min-width: 100%;
                 display: flex;
                 flex-direction: initial;
-                input{
+
+                input {
                     min-width: 100%;
                 }
             }
@@ -387,7 +388,8 @@ h4,
             .btnDiv {
 
                 .signIn,
-                .signUp, .reset {
+                .signUp,
+                .reset {
                     min-width: 100%;
                 }
             }
@@ -399,14 +401,9 @@ h4,
 
 }
 
-*/
-
-
-//         #logo {
+/* //         #logo {
 //             width: 50%;
 //         }
 //     }
 // }/// still not responsive 
 */
-
-
