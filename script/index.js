@@ -15,7 +15,7 @@ function getCookies() {
 $(document).ready(() => {
   let user = getCookies("signedInUser");
   if (user != "") {
-    window.location.replace("./pages/dashborad.html");
+    window.location.replace("./pages/dashboard.html");
   } else {
     window.location.replace("./pages/signin.html");
   }
