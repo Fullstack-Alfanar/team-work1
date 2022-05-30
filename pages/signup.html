@@ -28,39 +28,36 @@
         <div class="inputDiv">
           <label>Username</label>
           <i class="bi bi-person-fill"></i>
-          <input type="text" placeholder=" Username">
+          <input type="text" placeholder=" Username" id="username">
         </div>
         <div class="inputDiv">
           <label>Email</label>
           <i class="bi bi-envelope-fill"></i>
-          <input type="email" placeholder=" Email">
+          <input type="email" placeholder=" Email" id="email">
         </div>
         <div class="inputDiv">
           <label>Password</label>
           <i class="bi bi-lock-fill"></i>
-          <input type="password" placeholder=" Password">
+          <input type="password" placeholder=" Password" id="password">
         </div>
         <div class="inputDiv">
           <label>Confirm Password</label>
           <i class="bi bi-check-lg"></i>
-          <input type="password" placeholder=" Confirm Password">
+          <input id="passwordConfirm" type="password" placeholder="Confirm Password">
         </div>
 
-
+        <label id="Error"></label>
         <div class="btnDiv">
-          <button class="signUp">Sign up</button>
-          <p class="special_txt">Already Have An Account? Sign In !</p>
+          <button class="signUp" onclick="validateSignUp()">Sign up</button>
+          <p class="special_txt">Already Have An Account? <a href="/pages/signin.html"> Sign In !</a></p>
 
         </div>
-
-
-
       </form>
     </div>
   </main>
 
 
-  <script src="../script/script.js"></script>
+  <script src="../script/signup.js"></script>
 </body>
 
 </html>
