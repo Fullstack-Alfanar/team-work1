@@ -54,6 +54,7 @@ body {
   right: 20px;
   background-color: white;
   width: 40%;
+  max-width: 600px;
   padding: 2em;
   margin-top: 40px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -61,29 +62,33 @@ body {
   border-radius: 15px;
 }
 
+@media screen and (min-width: 1600px) {
+  .main .signInAria {
+    margin-right: 10%;
+  }
+}
+
 .main .signInAria form {
   padding: 10px 30px;
 }
 
 .main .signInAria form .inputDiv {
-  width: 100%;
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
   background-color: #e9dddd;
   margin: 10px 0;
   border: 2px solid #D83D3D;
-  border-radius: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-radius: 0.6em;
 }
 
 .main .signInAria form .inputDiv i {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   text-align: center;
   color: #666;
   font-size: 1.1em;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .main .signInAria form .inputDiv input {
@@ -93,13 +98,27 @@ body {
   background: none;
   border: none;
   outline: none;
-  width: 50%;
   font-size: 1em;
   color: #444;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 5px;
+  text-align: center;
 }
 
 .main .signInAria form .inputDiv label {
   padding-left: 0.5em;
+}
+
+.main .signInAria form .btnDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main .signInAria form .btnDiv .signIn {
@@ -109,7 +128,6 @@ body {
   margin: 0.8em 0;
   color: white;
   font-weight: border;
-  width: 21em;
   height: 2.5em;
   border: 1px solid #D83D3D;
   font-size: 1.2em;
@@ -135,13 +153,12 @@ body {
 
 .main .signInAria form .btnDiv .signUp,
 .main .signInAria form .btnDiv .reset {
-  background-color: #060644;
+  background-color: #1b36ce;
   text-align: center;
   padding: 0.5em;
   margin: 0.8em 0;
   color: white;
   font-weight: border;
-  width: 21em;
   height: 2.5em;
   border: 1px solid #060644;
   font-size: 1.2em;
@@ -150,12 +167,12 @@ body {
 }
 
 .main .signInAria form .btnDiv .signUp:hover {
-  background-color: #1b36ce;
+  background-color: #060644;
   cursor: pointer;
 }
 
 .main .signInAria form .btnDiv .reset:hover {
-  background-color: #1b36ce;
+  background-color: #060644;
   cursor: pointer;
 }
 
@@ -335,12 +352,6 @@ h4,
   }
 }
 
-/*
-@media only screen and (min-width: 350px) {
-
-    .main {
-        position: relative;
-
 /* Column container */
 .row {
   display: -webkit-box;
@@ -366,12 +377,21 @@ h4,
 }
 
 /* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .mainSvg h4 {
+    display: none;
   }
   .main .mainSvg img {
     text-align: center;
@@ -386,25 +406,26 @@ h4,
   }
   .main .signInAria {
     margin-top: 10%;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    width: 80%;
   }
-  .main .signInAria .inputDiv {
-    min-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: initial;
-    -webkit-box-direction: initial;
-        -ms-flex-direction: initial;
-            flex-direction: initial;
+}
+
+@media screen and (max-width: 1100px) and (max-width: 650px) {
+  .main .signInAria {
+    width: 95%;
   }
-  .main .signInAria .inputDiv input {
-    min-width: 100%;
-  }
+}
+
+@media screen and (max-width: 1100px) {
   .main .signInAria .btnDiv .signIn,
   .main .signInAria .btnDiv .signUp,
   .main .signInAria .btnDiv .reset {
-    min-width: 100%;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
