@@ -25,9 +25,6 @@ function validateSignUp() {
 }
 
 function addToLocalStorage(user) {
-  const userNameEl = document.getElementById("username").value;
-  const passwordEl = document.getElementById("password").value;
-  const emailEl = document.getElementById("email").value;
   let usersList = [];
 
   if (localStorage.getItem("registeredUsers"))
