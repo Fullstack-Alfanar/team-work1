@@ -1,61 +1,74 @@
-# My Bank 
+# My Bank
+
 A system allows the user to create a new account or log in to the system
 
-## Description  
+## Description
 
-The repository containins several files that build the project 
+The repository containins several files that build the project
 
-| File's Name | Descripe |
-| ----------- | -------- |
-| index.html | Loading page, reroute to sign in (if the user is not signed in) or reroute dashboard (if the user is already signed in) |
-| Pages | Contains files for building the pages, (pages's structure). |
-| style | Contains the design of the pages. |
-| script | Contains functions that are responsible for the logic of the pages. |
-| library | Contains  images or logo that used on the pages |
+| File's Name | Descripe                                                                                                                |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| index.html  | Loading page, reroute to sign in (if the user is not signed in) or reroute dashboard (if the user is already signed in) |
+| Pages       | Contains files for building the pages, (pages's structure).                                                             |
+| style       | Contains the design of the pages.                                                                                       |
+| script      | Contains functions that are responsible for the logic of the pages.                                                     |
+| library     | Contains images or logo that used on the pages                                                                          |
 
+## Installation
 
-## Installation 
-- copy http repository:  ```https://github.com/Fullstack-Alfanar/team-work1.git```
-- open `Visual Studio Code` 
+- copy http repository: `https://github.com/Fullstack-Alfanar/team-work1.git`
+- open `Visual Studio Code`
 - open a new terminal
-- type `git clone` and paste the link 
+- type `git clone` and paste the link
 - type a command `code .`
 
-## Usage 
+## Usage
 
 ```python
 import myBank
 
-# sign In 
+# sign In
 by the Functions that handle login
 
-# sign up 
+# sign up
 by the Functions that handle sign Up
 
-#check the values which the user insert 
-by the function 'checkValue()' 
+#check the values which the user insert
+by the function 'checkValue()'
 
-# renew password 
+# renew password
 by the functions that handle forget Password
 
 # view dashboard
 
-# Log Out 
+# Log Out
 ```
 
+## diagrams
 
+- index
+  ![screenshot](/library/index.png)
+- sign in
+  ![screenshot](/library/signin.png)
+- sign up
+  ![screenshot](/library/signup.png)
+- password reset
+  ![screenshot](/library/reset.png)
+- dashboard
+  ![screenshot](/library/dashboard.png)
 
+## Demo System
 
-## Demo System 
-please visit our website:  
+please visit our website:
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Contributors
 
-## Contributors 
 This project will build by Yosef Awad , May Hamdone , Amal Shalabni , Reema Rahhal , Rana Butto
 
-
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)
