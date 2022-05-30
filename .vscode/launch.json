@@ -9,9 +9,13 @@
             "request": "launch",
             "reAttach": true,
             "name": "Launch localhost",
-            "url": "http://localhost:5500/pages/signin.html",
+            "url": "http://localhost:5500",
             "webRoot": "${workspaceFolder}",
             "pathMappings": [
+                {
+                    "url": "http://localhost:5500",
+                    "path": "${workspaceFolder}"
+                },
                 {
                     "url": "http://localhost:5500",
                     "path": "${workspaceFolder}"

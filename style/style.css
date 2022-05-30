@@ -335,6 +335,12 @@ h4,
   }
 }
 
+/*
+@media only screen and (min-width: 350px) {
+
+    .main {
+        position: relative;
+
 /* Column container */
 .row {
   display: -webkit-box;
@@ -358,7 +364,6 @@ h4,
       -ms-flex: 60%;
           flex: 60%;
 }
-
 
 /* Responsive layout - when the screen is less than 1200px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
@@ -397,243 +402,9 @@ h4,
     min-width: 100%;
   }
   .main .signInAria .btnDiv .signIn,
-  .main .signInAria .btnDiv .signUp, .main .signInAria .btnDiv .reset {
+  .main .signInAria .btnDiv .signUp,
+  .main .signInAria .btnDiv .reset {
     min-width: 100%;
   }
 }
-/*# sourceMappingURL=style.css.map */
-
-
-/*# sourceMappingURL=style.css.map */ 
-
-/* design to dashboard page */
-
-.img{
-  width: 50px;
-  height: 50px;
-  border-radius: 25px; 
-  margin-left: 1100px; 
-  margin-top: 20px;
-
-}  
-.iconLogOut{
-  margin-left: 20px; 
-
-}  
-
-.subtitle{
- background-color: beige; 
- margin-left: 20px;  
-
- 
-} 
-
-.imgProfile{
-  width: 50px;
-  height: 50px; 
- 
-}  
-
-.labelA{
-  padding-left: 30px; 
-  
-}  
-.container{
-  display: flex; 
-
-} 
-
-.asideSection{
-  display: flex;
-}
-
-.holderName{
-
-  color: #B4BBBF; 
-  margin-left: 30px;
-} 
-
-.moveName{
-  margin-left: 30px;
-} 
-
-.div3{
-  margin-left: 70px; 
-  margin-top: 15px;
-
-} 
-
-.AccNum{ 
-  color: #B4BBBF;  
-  padding-right: 20px;
- 
-
-} 
-.main{
-  background-color: beige; 
-  margin-top: 20px; 
-  margin-left: 209px; 
-  
-} 
-
-.tableT{
-  margin-right: 800px;
-  margin-top: 20px;
-}  
-
-
-
-.myTable{
-  margin-left: 280px; 
-  margin-top: 30px; 
-  border-collapse:separate;
- border-spacing:0 15px;
-} 
-
-th{
-  padding-left: 50px;  
-  border-bottom: 1px solid #99A5AA;
-} 
-
-td{
-  padding-left: 50px; 
-  border-bottom: 1px solid #99A5AA;
-
-}
-
-.div1{
-  padding-left: 30px; 
-  margin-top: 10px;
-} 
-
-.div2{
-  margin-top: 15px;  
-  
-  
-}
-
-.sideBar{
-  background-color: beige; 
-  width: 200px;  
-  height: 100%;
- 
-  
-
-}  
-.move{
-  margin-left:30px; 
-  padding-top: 25px;
- 
-
-}
-
-
-
-.label1{
-  margin-right: 10px;
-} 
-
-.fundImg{ 
-  width: 20px; 
-  height: 20px;
-  margin-left:30px; 
-  margin-top: 25px; 
-
-} 
-
-.carde{
-  margin-left: 250px; 
-  margin-top: 80px;
-} 
-
-.iconCard{
-  padding-left: 100px;
-} 
-
-.charts{
- width: 500px; 
- margin-bottom: 50px;
- 
-} 
-.leftAside{
-  float: right; 
-  margin-right: 20px ;  
-  margin-top: 30px; 
-  
- 
-}  
- 
-.borderDiv1{
-  border: 1px solid black; 
-  padding-left: 10px; 
-  padding-bottom: 10px;
-  padding-top: 10px;
-
-} 
-
-.borderdiv2{
-  border: 1px solid black; 
-  padding-left: 10px; 
-  padding-bottom: 10px; 
-  margin-top: 20px;
-   padding-top: 10px;
-}
-
-
-.c-num{
-  margin-left: 10px;
-} 
-.moveDiv{
-  margin-top: 30px;
-} 
-
-.moveLabel{
-  margin-left: 50px; 
-  color: red;
-} 
-.divCredit{
-  padding-top: 20px; 
-
-}  
-
-.styleImg{
-  width: 50px; 
-  margin-left: 10px; 
-  
-}  
-
-.moveTT{
-  padding-top: 18px;
-}
-
-.container1{
-  display: flex;
-} 
-
-
-
-.moveBtn{
-  margin-left: 50px; 
-  margin-top: 30px;
-}  
-
-
-
-.btn1{
-  background-color: #D83D3D; 
-  border-radius: 10px;  
-
-  color: white ; 
-  font-size:medium; 
-  border-color: transparent;
-
-}  
-
-.disappear{
- visibility: hidden;
-
-}
-
-
-*/
 /*# sourceMappingURL=style.css.map */

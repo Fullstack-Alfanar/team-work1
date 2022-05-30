@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/dashBoard.css">
 
     <title>Dashboard</title>
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="#">my<span>Bank</span></a>
-
-        <img class="img" src="../library/profile.webp" alt="">
-        <label class="disappear"> <i class="bi bi-box-arrow-right , iconLogOut"></i></label>
-
+    <header class="header">
+        <a class="logo" href="/">my<span>Bank</span></a>
+        <div class="headerControls">
+            <img class="img" src="../library/profile.webp" alt="">
+            <button class="iconLogOut" onclick="signOut();">
+                <i class="bi bi-box-arrow-right "></i>
+            </button>
+        </div>
     </header>
     <aside class="leftAside">
         <div class="borderDiv1">
-
-
             <label>Credit Card</label>
             <label class="iconCard"> <i class="bi bi-credit-card-2-back"></i></label>
             <div class="moveDiv">
@@ -239,7 +239,36 @@
         </form>
     </section>
 
+    <script>
+        function signOut() {
+            let xHours = 2; // how many hours the user stays signed in
+            const d = new Date();
+            d.setTime(d.getTime() + (100));
+            let expires = d.toUTCString();
+            document.cookie = `signedInUser= ;expires=${expires};path=/`;
+            window.location.href = "/";
+        }
 
+        function getCookies() {
+            let cookie = document.cookie;
+            let user = "";
+            if (cookie.includes("signedInUser")) {
+                let splitCookie = cookie.split(";");
+                for (let i = 0; i < splitCookie.length; i++) {
+                    if (splitCookie[i].includes("signedInUser")) {
+                        user = splitCookie[i].split("=")[1];
+                    }
+                }
+            }
+            return user;
+        }
+
+        let user = getCookies();
+        if (user == "") {
+            window.location.replace("/");
+        }
+
+    </script>
 
 
 
