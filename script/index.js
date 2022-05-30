@@ -12,14 +12,11 @@ function getCookies() {
   return user;
 }
 
-function checkUser() {
-  $(document).onload(() => {
-    let user = getCookies("signedInUser");
-    if (user != "") {
-      window.location.replace("/pages/dashborad.html");
-    } else {
-      window.location.replace("/pages/signin.html");
-    }
-  });
-}
-checkUser();
+$(document).ready(() => {
+  let user = getCookies("signedInUser");
+  if (user != "") {
+    window.location.replace("./pages/dashborad.html");
+  } else {
+    window.location.replace("./pages/signin.html");
+  }
+});
